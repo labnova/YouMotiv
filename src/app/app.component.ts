@@ -31,4 +31,7 @@ export class AppComponent {
   title = 'YouMotiv';
   displayedColumns = ['pesoComplessivo', 'massaMuscolare', 'bmi', 'massaGrassa', "dataMisurazione"]
   dataForStarterTable = ELEMENT_DATA;
+  personalNotification = 5
+  appNotification = 0
+  gymNotification = 2
 }
