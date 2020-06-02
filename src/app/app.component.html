@@ -10,6 +10,17 @@
 <div class="mat-title">Buongiorno Hack@</div>
 <div class="mat-caption">Misurazioni precedenti</div>
 <button disableRipple mat-button>Vai</button>
+<div>
+  <mat-button-toggle #toggleBtn>Compara una singola giornata con oggi</mat-button-toggle>
+</div>
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="peso complessivo">Peso Complessivo</mat-button-toggle>
+    <mat-button-toggle value="massa grassa">Massa Grassa</mat-button-toggle>
+    <mat-button-toggle value="massa muscolare">Massa Muscolare</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>
 <hr>
 <h2 class="mat-headline">Your starter Table: </h2>
 <div class="container">
